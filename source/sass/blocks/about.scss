@@ -1,0 +1,96 @@
+.about__title {
+    font-family: Montserrat-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 75px;
+    color: #242121;
+}
+
+.--text {
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A39;
+
+}
+
+.about__text {
+    width: 612px;
+}
+
+.about__wraper {
+    background: #F6F8FA;
+    padding: 143px 0px 158px;
+}
+
+.--desc {
+    padding-top: 4px;
+}
+
+@media (min-width: $tablet-width) {
+    .about__wraper .container {
+        display: flex;
+
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .about__title {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: #FCBB08;
+            width: 60px;
+            height: 4px;
+            top: 70px;
+            left: 0px;
+        }
+    }
+
+    .about__wraper,
+    .wraper {
+        &:hover {
+            background: #edc8b812;
+        }
+    }
+
+    .wraper {
+        &:hover {
+            background: #edc8b812;
+            background-image: url(../img/dog.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+
+}
+
+@media (max-width: $tablet-width) {
+    .about__text {
+        width: 300px;
+    }
+
+    .about__wraper {
+        padding: 100px 0px 62px;
+    }
+
+    .--element {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: #FCBB08;
+            width: 60px;
+            height: 4px;
+            top: 70px;
+            left: 0px;
+        }
+    }
+
+}

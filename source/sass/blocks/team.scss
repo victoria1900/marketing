@@ -1,0 +1,79 @@
+.team__name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #333333;
+    width: 250px;
+}
+
+.team__desc {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #373A39;
+    width: 250px;
+    opacity: 0.8;
+}
+
+@media (min-width: $desktop-width) {
+    .team__img {
+        width: 370px;
+        height: 440px;
+    }
+
+    .team__desc {
+        width: 350px;
+    }
+
+    .team__name {
+        width: 350px;
+    }
+}
+
+.team__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 102px;
+}
+
+@media (max-width: $desktop-width) {
+    .team__img {
+        width: 75%;
+    }
+}
+
+.team__wraper {
+    padding-top: 170px;
+}
+
+@media (max-width: $tablet-width) {
+    .team__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .team__wraper {
+        padding-top: 0px;
+    }
+}
+
+.team-title {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: #FCBB08;
+        width: 60px;
+        height: 4px;
+        top: 80px;
+        left: 0px;
+    }
+}

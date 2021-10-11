@@ -1,0 +1,106 @@
+.magic__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A39;
+    width: 470px;
+    padding: 10px 0px 0px 0px;
+}
+
+.wraper {
+    background: #F6F8FA;
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+@media (min-width: $tablet-width) {
+    .wraper {
+        background: #F6F8FA;
+        background-image: url(../img/dog.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .magic__title {
+        width: 470px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: #FCBB08;
+            width: 60px;
+            height: 4px;
+            top: 155px;
+            left: 0px;
+        }
+    }
+
+    .magic__content {
+        width: 470px;
+        margin-left: auto;
+        padding: 101px 0px 241px 0px;
+    }
+
+    .magic__lead {
+        padding: 45px 0px 0px 0px;
+    }
+
+    .magic {
+        padding: 164px 0px 0px 0px;
+    }
+
+}
+
+@media (min-width: $desktop-width) {
+    .magic__text {
+        font-size: 20px;
+    }
+
+    .magic__content {
+        padding: 101px 0px 123px 0px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .magic__content {
+        padding: 110px 0px 0px 0px;
+    }
+
+    .magic__text {
+        width: 300px;
+    }
+
+    .magic__title {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: #FCBB08;
+            width: 60px;
+            height: 4px;
+            top: 70px;
+            left: 0px;
+        }
+    }
+
+    .wraper {
+        background: #F6F8FA;
+        background-image: url(../img/dog.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        padding-bottom: 495px;
+    }
+
+
+
+
+
+
+
+}
